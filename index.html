@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,35 @@
     <title>Porcentaje y descuento</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>Porcentaje y descuento</h1>
-    </header>
+
+    <section class="container">
+        <h4>Calculadora de porcentaje y descuento</h4>
+        <img src="img/DESCUENTO.png" alt="imagen de descuento">
+        <form>
+            <div class="caja">
+                <label for="precio">Precio(All)</label>
+            </div>
+            <div class="caja">
+                <input type="number" id="precio" placeholder="Ingresa el precio">
+            </div>
+
+            <div class="caja"><label for="InputCoupon">Escribe el cupón de descuento para tu producto:</label></div>
+            <div class="caja"><input id="InputCoupon" type="text" /></div>
+
+            <div class="caja">
+                <label for="descuento">Descuento(%)</label>
+            </div>
+            <div class="caja">
+                <input type="number" id="descuento" placeholder="Ingresa el descuento">
+            </div>
+            <button type="button" onclick="calcularDescuento()">Calcular descuento</button>
+        </form>
+        <p id="resultadoDescuento"></p>
+        <p id="resultadoPrecioConDescuento"></p>
+    </section>
     <script src="/js/app.js"></script>
 </body>
+
 </html>
